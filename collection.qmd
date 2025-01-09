@@ -1,0 +1,25 @@
+---
+title: "data collection: p2"
+authors:
+  - name: Christy Hsu
+    affiliation: Georgetown University
+    roles: writing
+    corresponding: true
+format:
+  html:
+    embed-resources: true
+--- 
+
+```{r}
+library(tidyverse)
+```
+```{r}
+# df494 <- read_csv('data-tolera/494wiki.csv')
+df494 |> dim()
+```
+```{r}
+df494 |> colnames()
+```
+```{r}
+table(df494$occupation)
+```
